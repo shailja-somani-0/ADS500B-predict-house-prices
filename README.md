@@ -14,3 +14,11 @@ We chose to fill in null values with the following methods:
 * This allows us get an understanding of the centrality and distribution of each of those fields using visualizations. 
 * Next we find the correlation between each of the 3 fields, allowing us to understand how they are related to each other. 
 * Finally, we map out these comparisons in scatter plots and a heatmap to visualize the relationship between the fields.  
+
+
+## Step 3: Building a Model
+* Identified our independent variables and decided that house price would be our dependent variable. Did a 70/30 train/test split.
+* We started by building 3 preliminary models: Linear Regression, XG Boost, and Random Forest.
+* XG Boost performed best (lowest RMSE), so we choose that. 
+* We optimized max_depth, learning_rate, and n_estimators for our XG Boost model.
+* We visualized the feature importance of our final model and demonstrated an example prediction.
